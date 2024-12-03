@@ -1,0 +1,39 @@
+<?php
+
+$id = $_GET['RecetteID'];
+
+echo "Modification de la recette numéro" . $id . "<br>";
+
+// nous connaissons l'id de la recette
+// selectionner les valeurs restantes dans la base de données
+
+require_once 'db.php';
+
+if ($connexion){
+    $sql_statement = "SELECT * FROM 'recette' WHERE 'id' = '$id' LIMIT 1";
+    $resultat = mysqli_query($connexion, $sql_statement);
+    if($resultat){
+        while($ligne = mysqli_fetch_assoc($resultat)){
+            $nom_recette = $ligne['nom'];
+            $duree_recette = $ligne['durée'];
+            $difficulte_recette = $ligne['difficulteID'];
+        }
+    }else{
+        echo "Problème SQL " . mysqli_connect_error();
+}else{
+    echo"Erreur de connexion " . mysqli_connect_error();
+}
+}
+?>
+
+<div class="form-container">
+<h2>Modifier une recette</p>
+<p>Veuillez modifier les champs et validez la modification</p>
+<form action="processModifRecette.php">
+    <input type = "hidden" name = "id" value="<?php echo $id;?>"></input>
+    Nom de la recette:<input type="text" name="nomRecette" value = "<?php echo $nom_recette; ?>"></input><br>
+    Durée de la recette:<textarea rows = "2" cols="3" name="dureeRecette"><?php echo $duree_recette; ?></textarea><br>
+    Difficulté de la recette:<textare rows = "2" cols="3" name="diffuclteRecette"><?php echo $difficulteRecette; ?></textarea><br>
+    <button type="Modifier">Valider la modification</button>
+</form>
+</div>

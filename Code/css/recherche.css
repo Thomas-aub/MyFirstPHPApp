@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;500;600;700;800;900&display=swap');
+
+
+body{
+    background-color: #F6E3C5;
+}
+
+#barreRecherche{
+    border-radius: 15px;
+    width:67%;
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    flex-direction: column;
+    margin-top: 6em;
+}
+
+.barre1{
+    padding: 1%;
+    background-color: #f86767;
+    border-radius: 15px;
+    display:flex;
+    align-items: center;
+    box-shadow: 10px 5px 5px #e6b6b6c4;
+}
+
+#recherche {
+    width: 100%;
+    display: flex;
+}
+
+.loupe {
+    padding-left: 6px;
+    padding-right: 7px;
+    border: 1px solid white;
+    border-radius:15px;
+    background: #e9e3e3;
+}
+
+.search {
+    height:40px;
+    width:40px;
+}
+
+
+.input-recherche{
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 1.5em;
+    font-family: "Roboto";
+    border: 1px solid white;
+    background: #e9e3e3;
+    border-radius:15px;
+    height: 100%;
+    width: 100%;
+    margin: 1px 1% 1px 1%;
+}
+
+button{
+    cursor:pointer;
+}
+form > button,form > input{
+    border:none;
+    background-color: transparent;
+}
+.input-recherche,.input-recherche:focus{
+    height:100%;
+    outline:none;
+}
+
+
+    /* FIN BARRE DE RECHERCHE */
+
+.center{
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    padding: 30px 20px;
+}
+
+.bar {
+    background-color: #f46060cb;
+    margin-left: 0;
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* MIDDLE */
+
+.middle {
+  margin: 0 auto;
+  width: 63vw;
+  height: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+/* RECETTE BOX */
+
+.recette-box {
+    margin-top: 2%;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.recette-container {
+    display: flex;
+    height: 350px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    background: rgba(255, 255, 255, 0.767);
+    box-shadow: 10px 5px 5px #e2cfcc;
+}
+.recette-img {
+    box-sizing: border-box;
+    width: 60%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.recette-img-shape{
+    
+    margin-left: 5%;
+    max-height: 100%;
+    max-width: 80%;
+}
+
+.recette-info {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: auto;
+}
+
+.recette-title{
+    padding-right: 2%;
+    margin-top: 3px;
+    box-sizing: border-box;
+    font-family: "Lobster";
+    font-size: 2em;
+    color: #ff4040;
+    height: 105px;
+    overflow: clip;
+    margin-bottom: 10px;
+    
+}
+
+.recette-desc{
+    overflow:hidden;
+    box-sizing: border-box;
+    height: 318px;
+    padding-right: 2%;
+    margin-bottom: 1%;
+    font-family: "Lobster";
+    font-size: 1.5em;
+}
+.recette-stick{
+    text-align: center;
+    color: white;
+    font-size: 1.1em;
+    background-color: #ff4040;
+    border: 3px solid #ff4040;
+
+} 
+
+a{
+    text-decoration:none;
+    overflow: hidden;
+    color: black;
+}
+
+
+
+    /* FIN RECETTE BOX */
+
+
+  /* FIN MIDDLE */
+
+  /* FIN BODY */
+

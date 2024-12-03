@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;500;600;700;800;900&display=swap');
+
+/* BODY */
+
+body {
+    background: #fff8f8;
+}
+
+    
+/*Barre rouge*/
+
+.red-stick {
+    margin: 0 auto;
+    width: 85vw;
+    border-bottom: solid #ff4040 3px;
+    margin-top: 5em;
+}
+
+    /* FIN DU MENU FIX*/
+
+
+
+/* Selection entrée plat dessert boisson */
+
+
+.selection a {
+  text-decoration: none;
+}
+
+.selection {
+    
+    margin-top: 4em;
+    width: 100%;
+    display: flex;
+}
+
+    /* Case rouge et blanc */
+.selection > *{
+    flex-basis: 100%;
+    text-align:center;
+    font-size: 1.2em;
+    font-family: 'Roboto Slab';
+    letter-spacing: .1rem;
+}
+
+.red-box > a {
+    color: white;
+}
+
+.white-box > a {
+    color: #ff4040;
+}
+
+.red-box {
+    background: #ff4040;
+}
+
+.white-box {
+    background: #ededed;
+}
+    /* FIN Selection entrée plat dessert boisson */
+
+
+
+/* STICK */
+
+.stick{
+    margin: 0 auto;
+    width: 98vw;
+    margin-top: 4em;
+    border-top: solid #211e1e 1px;
+}
+
+    /* FIN STICK */
+
+
+
+/* Choix */
+
+.choix {
+    margin: 5%;
+    margin-top: 4em;
+    width: 90vw;
+    height: 35vw;
+    margin-top: 1.5em;
+    display: flex;
+}
+
+.choix-box{
+    margin: 1%;
+    flex-basis: 100%;
+    border: solid black 3px;
+}
+
+    /* FIN Choix */
+/* BAS DE PAGE */
+.bas {
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* QUOTE */
+
+.big-quote{
+    margin: 0 auto;
+    display: flex;
+    width: 90%;
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+}
+
+.quote{
+    flex-basis: 100%;
+    background-color: #ebebf2 ;
+    text-align:center;
+    font-family: 'Dancing Script';
+    font-size: 250%;
+}
+
+    /* FIN Quote */
+
+
+/* CARROSEL */
+    
+    .items {
+        margin: 0 auto;
+        margin-top: 10em;
+        transform: translate(-50%, -50%);
+        user-select: none;
+      }
+
+      
+      .items .item {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        overflow: hidden;
+        transition: all 300ms ease-in-out;
+        z-index: -1;
+        opacity: 0;
+      }
+      
+      .item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .item.active {
+        opacity: 1;
+        z-index: 99;
+        box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
+      }
+      
+      .item.prev {
+        z-index: 2;
+        opacity: 0.25;
+        transform: translate(-125%, -50%);
+      }
+      
+      .item.next {
+        z-index: 2;
+        opacity: 0.25;
+        transform: translate(25%, -50%);
+      }
+      
+      .items .button-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 275px;
+        z-index: 100;
+      }
+      
+      .button-container .button {
+        color: #fff;
+        font-size: 32px;
+        cursor: pointer;
+        position: relative;
+        opacity: 0.75;
+        transition: all 300ms ease-in-out;
+      }
+      
+      .button-container .button:hover {
+        opacity: 1;
+      }
+      
+      .button-container .button:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 1);
+        border-radius: 50%;
+        z-index: -99;
+      }
+      
+      .button-container .button:nth-child(1) {
+        float: left;
+      }
+      
+      .button-container .button:nth-child(2) {
+        float: right;
+      }
+    /* FIN CARROSEL */    
+
+    /* FIN BAS DE PAGE */
+    
+
+    /* FIN BODY */
+
+
+/* FOOTER */
+footer{
+    background:#cccccc;
+    bottom: 0;
+    margin-top: 3em;
+}
+.footer-title{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    font-family: 'Lobster';
+    font-weight: bold;
+    font-size: 3em;
+    color: #ff4040;
+}
+
+.footer-region{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer-region-list {
+    list-style: none;
+    font-size: 1.2em;
+    font-family: 'Roboto';
+}
+.footer-region-list li {
+    margin-bottom: 3px;
+}
+
+
+
+/* FIN FOOTER */
+
